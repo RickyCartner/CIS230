@@ -6,17 +6,113 @@
     
     <link rel="stylesheet" href="css-styles.css">
     
+    <style>
+        .task-projects {
+            min-width: 600px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+        }
+        
+        .task-projects>h3 {
+            border-bottom: 1px solid #e9eff5;
+            color: blue;
+        }
+    
+    
+    </style>
+    
 </head>
 
+    
+<!-- https://www.crunchbase.com/ -->
 <body>
+    
+    <div id="page-container">
+        <!-- HEADER INFORMATION -->
+        <header>
 
-    <div class="content">
-      <h1>Sticky Footer with Flexbox</h1>
-      <p><button id="add">Add Content</button></p>
+            <h1>ITBS Archer</h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li><li>
+                        <a href="tasks-projects.html" id="current-page">Tasks/Projects</a>
+                    </li><li>
+                        <a href="documentation.html">Documentation</a>
+                    </li><li>
+                        <a href="contact.html">Contact</a>
+                    </li><li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN BODY INFORMATION -->
+        <div id="content">
+
+            <main>
+                <h2>Tasks &amp; Projects</h2>
+
+                <div class="task-projects">
+                    <h3>All Tasks/Projects</h3>
+                    <table>
+                        <tr>
+                            <th>Project Type</th>
+                            <th>Project ID</th>
+                            <th>Project Title</th>
+                            <th>Date Logged</th>
+                            <th>Owner</th>
+                            <th>Due Date</th>
+                            <th>Developer</th>
+                        </tr>
+
+                        <tr>
+                            <td>User Story</td>
+                            <td>14987</td>
+                            <td>Update screen to accommodate new guidance fields</td>
+                            <td>2/25/2021</td>
+                            <td>Leah Allen</td>
+                            <td>3/7/2021</td>
+                            <td>Dennis Mix</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bug</td>
+                            <td>5367</td>
+                            <td>CCR record does not match CHub</td>
+                            <td>2/25/2021</td>
+                            <td>Leah Allen</td>
+                            <td>3/2/2021</td>
+                            <td>Gordon Chavis</td>
+                        </tr>
+
+                        <tr>
+                            <td>User Story</td>
+                            <td>15302</td>
+                            <td>Add ability to manually apply vulnerability IDs to Config Checks</td>
+                            <td>2/24/2021</td>
+                            <td>Ara Thompson</td>
+                            <td>4/25/2021</td>
+                            <td>Valerie Lee</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </main>
+
+        </div>
+
+        <!-- FOOTER INFORMATION -->
+        <footer class="footer">
+            Copyright &copy; 2016 Door County Wild Flowers
+        </footer>
     </div>
-
-    <footer class="footer">
-      Footer 
-    </footer>
+    
 </body>
 </html>

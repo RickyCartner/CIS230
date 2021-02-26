@@ -21,29 +21,149 @@ header, footer {
     color: #fff;
 }
 
-.content {
-  flex: 1 0 auto;
+header h1 {
+    margin-left: 1rem;
+}
+
+
+nav {
+    background-color: lightgray;
+    /*border-radius: 0 10px 10px 0;*/
+    box-shadow: 3px 0 5px #000;
+    /*border-top: #242424 solid 1px;*/
+    /*border-bottom: #242424 solid 1px;*/
+    /*margin: 0 auto;*/
+    /*padding-top: 10px;*/
+    /*margin-left: -2rem;*/
+    /*padding: .25rem;*/
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav a {
+    display: block;
+    color: #242424;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1em;
+    /*border: 1px solid black;*/
+}
+
+nav a:hover {
+    background-color: #adb9c9;
+}
+
+
+#current-page {
+    background-color: #adb9c9;
+    text-decoration: none;
+}
+
+#page-container {
+    flex: 1 0 auto;
+}
+
+#content {
+    margin: 1rem 1rem 2.5rem 1rem;
 }
 
 .flex-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    /*align-items: flex-start;*/
 }
+
 
 .flex-box {
     background-color: #fff;
-    width: 200px;
+    width: 500px;
     margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    /*flex: 0 0 auto;*/
 }
 
-.flex-box h3 {
+.flex-box>h3 {
     border-bottom: 1px solid #e9eff5;
     color: blue;
 }
 
+.flex-box a {
+    color: blue;
+    text-decoration: none;
+}
 
-.footer {
-  /*flex-shrink: 0;*/
+.flex-box a:hover {
+    text-decoration: underline;
+}
+
+
+/**** ARTICLE FORMATTING  ****/
+
+article {
+    overflow: auto;
+}
+
+.logo-box {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.logo-box>img {
+    width: 100px;
+    /*margin: 0 auto;*/
+}
+
+article a {
+    color: blue;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+
+/**** TABLE FORMATTING  ****/
+
+table {
+    border-collapse: collapse
+}
+
+th, td {
+    font-size: .9rem;
+    border: 1px solid #adadad;
+    text-align: left;
+    padding-left: .25rem;
+    padding-right: .5rem;
+    
+}
+
+
+
+
+/***** FOOTER FORMATTING ********/
+
+#footer {
+    flex-shrink: 0;
+    height: 2.5rem;
 }
 
 
