@@ -5,31 +5,41 @@
     <title>Archer</title>
     
     <link rel="stylesheet" href="css-styles.css">
+    <link rel="stylesheet" href="css-styles-contact.css">
     
     <style>
-        .task-projects {
-            min-width: 600px;
-            background-color: #fff;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 10px;
+        
+        /**** ADJUST MIN WIDTH TO PREVENT TABLE FROM OVERFLOWING ****/
+        #content {
+            min-width: 1300px;
         }
         
-        .task-projects>h3 {
-            border-bottom: 1px solid #e9eff5;
-            color: blue;
+        aside {
+            width: 20%;
+            padding-left: .5rem;
+            margin-left: .5rem;
+            float: left;
+            box-shadow: inset 5px 0 5px -5px #29627e;
+            font-style: italic;
+            color: #29627e;
         }
-    
-    
+
+        aside > p {
+            margin: .5rem;
+        }
+        
+        /**** ADJUST STARTING HEIGHT OF TD FOR BETTER LOOK ****/
+        td {
+            height: 2em;
+        }
+
     </style>
+    
     
 </head>
 
-    
-<!-- https://www.crunchbase.com/ -->
 <body>
     
-    <div id="page-container">
         <!-- HEADER INFORMATION -->
         <header>
 
@@ -57,24 +67,144 @@
 
             <main>
                 <h2>Contact</h2>
+                
+                <aside>
+                    <table>
+                        <tr>
+                            <th>Title</th>
+                            <th>Name</th>
+                            <th>Extension</th>
+                        </tr>
+                        <tr>
+                            <td>Manager</td>
+                            <td>Rick Massimo</td>
+                            <td>45754</td>
+                        </tr>
+                        <tr>
+                            <td>Supervisor</td>
+                            <td>Ed Harris</td>
+                            <td>42352</td>
+                        </tr>
+                        <tr>
+                            <td>Sr. App Developer</td>
+                            <td>Valerie Lee</td>
+                            <td>45874</td>
+                        </tr>
+                        <tr>
+                            <td>Sr. App Developer</td>
+                            <td>Gordon Chavis</td>
+                            <td>46328</td>
+                        </tr>
+                        <tr>
+                            <td>App Developer</td>
+                            <td>Ricky Cartner</td>
+                            <td>49967</td>
+                        </tr>
+                        <tr>
+                            <td>App Developer</td>
+                            <td>Dennis Mix</td>
+                            <td>41372</td>
+                        </tr>
+                    
+                    </table>
 
-                <div class="task-projects">
-                    <h3>ITBS Archer</h3>
-                    <form>
+                </aside>
+
+                <div id="main-content-form">
+                    <h3>Contact Us</h3>
+ 
+                    <form action="process-form.html" method="get" role="form">
+
                         
+
+                        <!-- Contact Information -->
+                        <div>
+                            <label for="fname">*First name:</label>
+                            <input type="text" id="fname" name="first_name" value="" required>
+                        </div>
+
+                        <div>
+                            <label for="lname">*Last name:</label>
+                            <input type="text" id="lname" name="last_name" value="" required>
+                        </div>
+
+                        <div>
+                            <label for="eid">*Employee ID:</label>
+                            <input type="text" id="eid" name="employee_id" maxlength="4" value="" style="text-transform: uppercase;" required>
+                        </div>
+
+                        <div>
+                            <label for="phone">*Telephone:</label>
+                            <input type="text" id="phone" name="phone" value="" required>
+                        </div>
+
+                        
+                        <!-- REASON FOR CONTACT -->
+                        <div>
+                            <label for="knowledge">*Reason for contact:</label>
+                            <input list="reason" name="knowledge" id="knowledge" required>
+                            <datalist id="reason">
+                                <option value="Something is broken">
+                                <option value="Add user to Active Directory">
+                                <option value="Add user to Archer">
+                                <option value="Create new Applicaiton">
+                                <option value="Create new Data Feed">
+                                <option value="Something else">
+                            </datalist>
+
+                        </div>
+                        
+
+                        <div>
+                            <label for="addtl" style="vertical-align: top;">*Beiefly describe your request (in 300 characters or less)</label>
+                            <textarea name="message" id="addtl" rows="10" cols="30" required></textarea>
+                        </div>
+
+
+                        <!-- REGION -->
+                        <div>
+                            <fieldset>
+                                <legend>*Is this for Production or Test?</legend>
+
+                                <label for="prod">Production:</label>
+                                <input type="radio" id="prod" name="region" value="Production" required><br>
+
+                                <label for="test">Test:</label>
+                            <input type="radio" id="test" name="region" value="Test">
+
+                            </fieldset>
+                        </div>
+
+                        <!-- IMPACT -->
+                        <div>
+                            <label for="impact">*How many people are impacted?</label>
+                            <input type="number" id="impact" name="impact" min="1" max="200" step="1" required>
+                        </div>
+                        
+                        
+
+                        <!-- Submit -->
+
+                        <div>
+                            <input class="form-submit-button" type="submit" value="Submit">
+                        </div>
+
+
                     </form>
+ 
                 </div>
 
 
             </main>
-
+            
+            <div class="push"></div>
         </div>
 
         <!-- FOOTER INFORMATION -->
-        <footer class="footer">
+        <footer id="footer">
             Copyright &copy; 2016 Door County Wild Flowers
         </footer>
-    </div>
+
     
 </body>
 </html>

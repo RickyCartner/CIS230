@@ -1,0 +1,89 @@
+/****** Change font style of all pages *******/
+body {
+        font-family: Roboto, Arial, sans-serif;
+}
+
+
+/****** Format the Form on the "Rentals.html" page *******/
+
+form {
+    text-align: center;
+}
+
+#main-content-form {
+    width: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 auto 10px auto;
+    padding: 10px;
+
+}
+
+#main-content-form>h3 {
+    border-bottom: 1px solid #e9eff5;
+    color: blue;
+}
+
+.form-submit-button {
+    background: #B9DFFF;
+    color: #000;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow:none;
+    margin-left: 160px;
+}
+
+.form-submit-button:hover {
+    background: #016ABC;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow:none;
+    cursor: pointer;
+}
+
+.form-section {
+    border-bottom: 1px solid black;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 8px;
+}
+
+form div {   
+    margin-bottom: 8px;
+}
+
+input, textarea, select {
+    width: 350px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 12pt;
+    font-family: Arial, sans-serif;
+}
+
+fieldset {
+    width: 320px;
+    margin: auto auto auto 255px;
+    text-align: left;
+}
+
+fieldset>label {
+    width: 125px;
+    text-align: right;
+    /*border: 1px solid red;*/
+    /*margin-left: 5px;*/
+}
+
+fieldset>input {
+    width: 50px;
+    margin-right: 10px;
+}
+
