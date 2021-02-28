@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Archer</title>
+    <meta name="description" content="CIS230 Final Project">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Ricky Cartner">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="css-styles.css">
-    <link rel="stylesheet" href="css-styles-contact.css">
+    <title>Archer</title>
+    <link rel="icon" type="image/png" href="images/archer.png">
+    
+    <link rel="stylesheet" href="css/css-styles.css">
+    <link rel="stylesheet" href="css/css-styles-contact.css">
+    <script src="javascript/footer.js"></script>
     
     <style>
         
@@ -22,15 +29,36 @@
             box-shadow: inset 5px 0 5px -5px #29627e;
             font-style: italic;
             color: #29627e;
-        }
-
-        aside > p {
-            margin: .5rem;
+            background-color: #fff;
+            border-radius: 0 10px 10px 0;
+            border: 1px solid #adadad;
         }
         
-        /**** ADJUST STARTING HEIGHT OF TD FOR BETTER LOOK ****/
-        td {
+        aside table {
+            border-collapse: collapse;
+        }
+
+        aside th, aside td {
+            font-size: .9rem;
+            text-align: left;
+            padding-left: .25rem;
+            padding-right: .5rem;
             height: 2em;
+            border: none;
+        }
+        
+        aside th {
+            border-top: none;
+            border-left: 1px solid #adadad;
+        }
+        
+        aside td {
+            border-top: 1px solid #adadad;
+            border-left: 1px solid #adadad;
+        }
+        
+        aside td:first-child, aside th:first-child {
+             border-left: none;
         }
 
     </style>
@@ -43,7 +71,7 @@
         <!-- HEADER INFORMATION -->
         <header>
 
-            <h1>ITBS Archer</h1>
+            <h1><img src="images/archer.png" alt="Archer logo" width="30" height="30" style="background-color: #ccc;"> ITBS Archer</h1>
 
             <nav>
                 <ul>
@@ -110,10 +138,13 @@
 
                 </aside>
 
+                
+                <!-- FORM BEGINS HERE -->
+                
                 <div id="main-content-form">
                     <h3>Contact Us</h3>
  
-                    <form action="process-form.html" method="get" role="form">
+                    <form action="process-form.html" method="get">
 
                         
 
@@ -202,7 +233,9 @@
 
         <!-- FOOTER INFORMATION -->
         <footer id="footer">
-            Copyright &copy; 2016 Door County Wild Flowers
+            <div id="footer-div">
+                placeholder
+            </div>
         </footer>
 
     

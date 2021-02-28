@@ -2,21 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Archer</title>
+    <meta name="description" content="CIS230 Final Project">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Ricky Cartner">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="css-styles.css">
-
+    <title>Archer</title>
+    <link rel="icon" type="image/png" href="images/archer.png">
+    
+    <link rel="stylesheet" href="css/css-styles.css">
+    <link rel="stylesheet" href="css/css-styles-documentation.css">
+    <script src="javascript/footer.js"></script>
+    
     
 </head>
 
-    
 <body>
     
-    <!--<div id="page-container">-->
         <!-- HEADER INFORMATION -->
         <header>
 
-            <h1>ITBS Archer</h1>
+            <h1><img src="images/archer.png" alt="Archer logo" width="30" height="30" style="background-color: #ccc;"> ITBS Archer</h1>
 
             <nav>
                 <ul>
@@ -25,7 +31,7 @@
                     </li><li>
                         <a href="tasks-projects.html">Tasks/Projects</a>
                     </li><li>
-                        <a href="documentation.html"  id="current-page">Documentation</a>
+                        <a href="documentation.html" id="current-page">Documentation</a>
                     </li><li>
                         <a href="contact.html">Contact</a>
                     </li><li>
@@ -34,81 +40,86 @@
                 </ul>
             </nav>
         </header>
-        
+
         <!-- MAIN BODY INFORMATION -->
         <div id="content">
-            
+
             <main>
                 <h2>Documentation</h2>
                 
-                <div class="main-content-div">
-                    <h3>All Documentation</h3>
+                <!-- PAGE NAVIGATION -->
+                <aside>
+                    <ul>
+                        <li><a href="#application">Application</a></li>
+                        <li><a href="#solution">Solution</a></li>
+                        <li><a href="#datafeed">Data Feed</a></li>
+                        <li><a href="#reports">Reports</a></li>
                     
-                    <table>
-                        <tr>
-                            <th>Project Type</th>
-                            <th>Project ID</th>
-                            <th>Project Title</th>
-                            <th>Date Logged</th>
-                            <th>Owner</th>
-                            <th>Due Date</th>
-                            <th>Developer</th>
-                        </tr>
+                    </ul>
 
-                        <tr>
-                            <td>User Story</td>
-                            <td>14987</td>
-                            <td>Update screen to accommodate new guidance fields</td>
-                            <td>2/25/2021</td>
-                            <td>Leah Allen</td>
-                            <td>3/7/2021</td>
-                            <td>Dennis Mix</td>
-                        </tr>
+                </aside>
 
-                        <tr>
-                            <td>Bug</td>
-                            <td>5367</td>
-                            <td>CCR record does not match CHub</td>
-                            <td>2/25/2021</td>
-                            <td>Leah Allen</td>
-                            <td>3/2/2021</td>
-                            <td>Gordon Chavis</td>
-                        </tr>
-
-                        <tr>
-                            <td>User Story</td>
-                            <td>15302</td>
-                            <td>Add ability to manually apply vulnerability IDs to Config Checks</td>
-                            <td>2/24/2021</td>
-                            <td>Ara Thompson</td>
-                            <td>4/25/2021</td>
-                            <td>Valerie Lee</td>
-                        </tr>
-                    </table>
-                    
+                
+                <!-- PAGE SECTIONS -->
+                
+                <div class="main-content-div" id="application">
+                    <h3>Application</h3>   
+                    <ol type="1">
+                        <li><a href="#">What is an Application</a></li>
+                        <li><a href="#">How do Applications work</a></li>
+                        <li><a href="#">How to create an Application</a></li>
+                        <li><a href="#">How to modify an Application</a></li>
+                        <li><a href="#">How to delete an Application</a></li>
+                    </ol>
                 </div>
                 
-                <div class="main-content-div">
-                    <h3>Applications</h3>
-                    
+                <div class="main-content-div" id="solution">
+                    <h3>Solution</h3>
+                    <ol type="1">
+                        <li><a href="#">What is a Solution</a></li>
+                        <li><a href="#">How do Solutions work</a></li>
+                        <li><a href="#">How to create a Solution</a></li>
+                        <li><a href="#">How to modify a Solution</a></li>
+                        <li><a href="#">How to delete a Solution</a></li>
+                    </ol>
                 </div>
                 
-                <div class="main-content-div">
-                    <h3>Data Feeds</h3>
-                    
+                <div class="main-content-div" id="datafeed">
+                    <h3>Data Feed</h3>
+                    <ol type="1">
+                        <li><a href="#">What is a Data Feed</a></li>
+                        <li><a href="#">How do Data Feeds work</a></li>
+                        <li><a href="#">How to create a Data Feed</a></li>
+                        <li><a href="#">How to modify a Data Feed</a></li>
+                        <li><a href="#">How to delete a Data Feed</a></li>
+                    </ol>
                 </div>
+
+                <div class="main-content-div" id="reports">
+                    <h3>Reports</h3>
+                    <ol type="1">
+                        <li><a href="#">What is a Report</a></li>
+                        <li><a href="#">How do Reports work</a></li>
+                        <li><a href="#">How to create a Report</a></li>
+                        <li><a href="#">How to modify a Report</a></li>
+                        <li><a href="#">How to delete a Report</a></li>
+                    </ol>
+                </div>
+
+
 
             </main>
             
             <div class="push"></div>
         </div>
 
-        
         <!-- FOOTER INFORMATION -->
         <footer id="footer">
-            Copyright &copy; 2016 Door County Wild Flowers
+            <div id="footer-div">
+                placeholder
+            </div>
         </footer>
-    <!--</div>-->
+
     
 </body>
 </html>
