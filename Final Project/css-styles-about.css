@@ -1,0 +1,29 @@
+/****** Change font style of all pages *******/
+body {
+        font-family: Roboto, Arial, sans-serif;
+}
+
+
+sup {
+    vertical-align: super;
+    font-size: 8pt;
+}
+        
+
+#main-content-about {
+    width: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 auto 10px auto;
+    padding: 10px;
+
+}
+
+#main-content-about>h3 {
+    border-bottom: 1px solid #e9eff5;
+    color: blue;
+}
+
+li {
+    margin-bottom: 1em;
+}

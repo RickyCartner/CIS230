@@ -100,6 +100,19 @@ nav a:hover {
     color: blue;
 }
 
+.main-content-div {
+    min-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#main-content-div>h3 {
+    border-bottom: 1px solid #e9eff5;
+    color: blue;
+}
+
 .flex-container {
     max-width: 1300px;
     min-width: 500px;
